@@ -1,0 +1,60 @@
+---------VENV----
+crear vennv
+>python -m venv venv
+
+Correr venv
+.\venv\Scripts\activate
+
+instalar paquetes/librerias
+
+>pip install *nombre de la libreria*
+
+crear hoja de texto con los paquetes/librerias INSTALADAS
+>pip freeze > requirements.txt
+
+Reinstilar paquetes/librerias
+>pip install -r requirements.txt
+
+Correr venv
+.\venv\Scripts\activate
+
+
+Mi Corazón 💖💕: eso para cuando ya inicializaste
+git add .
+git commit -m "holis"
+git push -u origin master
+
+Mi Corazón 💖💕:esto si no has inicializado
+
+git init
+git remote add origin url(link del github)
+git add .
+git commit -m "holis"
+git reset HEAD~1 (revertir commit)
+git push -f origin master
+
+----venv linux-----
+
+python -m venv .venv
+
+activar:
+source .venv/bin/activate
+pip install ipykernel
+python -m ipykernel install --user --name=.venv (ejecutar, salir y volver a entrar, y rezar)
+deactivate (salir del venv)
+
+--- entrar a capetas desde terminal
+
+cd <nombre de carpeta> tab
+
+cd .. (retoceder)
+
+---limpiar terminal 
+
+cls(wind) 
+clear(lin)
+
+---
+par meter a carpets y las capetas tiene espacios usar 
+cd 2\ semana/
+
