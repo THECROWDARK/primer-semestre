@@ -1,19 +1,19 @@
 ---------VENV----
 crear vennv
->python -m venv venv
+python -m venv venv
 
 Correr venv
 .\venv\Scripts\activate
 
 instalar paquetes/librerias
 
->pip install *nombre de la libreria*
+pip install *nombre de la libreria*
 
 crear hoja de texto con los paquetes/librerias INSTALADAS
->pip freeze > requirements.txt
+pip freeze > requirements.txt
 
 Reinstilar paquetes/librerias
->pip install -r requirements.txt
+pip install -r requirements.txt
 
 Correr venv
 .\venv\Scripts\activate
@@ -31,7 +31,10 @@ git remote add origin url(link del github)
 git add .
 git commit -m "holis"
 git reset HEAD~1 (revertir commit)
-git push -f origin master
+.gitignore(crear un archivo, dentro poner lo .venv/(/ es para carpetas, se daja solo si es archivo(.env)) para q no se sube al repositorio)
+git push -f origin master (subir al repo)
+git pull origin master (jalar del repo)
+
 
 ----venv linux-----
 
