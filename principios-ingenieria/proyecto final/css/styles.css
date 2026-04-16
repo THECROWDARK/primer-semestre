@@ -1,0 +1,738 @@
+/* -----------------------------------------home------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green-oscuro: #22E309;
+    --green-claro: #2DD117;
+    --rojo-oscuro: #E7180B;
+    --rojo-claro: #E9424A;
+    --amarillo: #F4B21A;
+    --white: #fff;
+    --gris-oscuro: #121212;
+    --gris-claro: #1F1F1F;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    
+}
+
+body{
+    background-color:#1F1F1F; ;
+}
+
+button{
+    font-family: "Inter", sans-serif;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+h3{
+    color: #fff;
+}
+
+/* Reutilizables */
+
+.consejos{
+    background: transparent;
+    border: 1px solid #22E309; /*#17A60A; /* solid es para linea continua por ejemplo que no se en puntos */
+    color: #22E309;
+}
+
+.consejos:hover{
+    background: #2DD117;
+    color: white;
+}
+
+.partes{
+    background: transparent;
+    border: 1px solid #F4B21A ;/*#FFAC00; */ /* solid es para linea continua por ejemplo que no se en puntos */
+    color: #F4B21A;
+}
+
+.partes:hover{
+    background: #F4B21A;
+    color: white;
+}
+
+.modelos{
+    background: transparent;
+    border: 1px solid #E7180B; /* #BF0000; /* solid es para linea continua por ejemplo que no se en puntos */
+    color: #E9424A;
+}
+
+.modelos:hover{
+    background: #E9424A;
+    color: white;
+}
+
+.navbar {
+    position: fixed; /* posicion(en este caso de la barra de navegacion) fixed(fija para se mueste siempre) */
+    top: 0; /*arriba y posicion */
+    left: 0; /* izquierda y posicion */
+    width: 100%; /* ancho tamano del ancho */
+    margin: auto; /* margen automatico */
+    display: flex; /* para que pueda ser flexible se pueda editar y se pueda hacer responsing a otros dispositivos */
+    align-items: center; /*centrar verticalmente los objetos*/
+    justify-content: space-between; /*centrar horizontalmente los objetos, space-between separ los objetos uno del otro*/
+    padding: 20px   90px; /* margen interna y posicion 20 ariba/abajo 90 derecha/izquierda */
+    background: #121212; /* color de fondo (esta negro porque soy bien dark xd) */
+    box-shadow: 0 2px 4px rgba((0), 0, 0, 0.2); /*1 vertical 2 horizontal 3 desenfoque rgba 4 color (el ultimo es opacidad va de 0 a 1)*/
+}
+
+.navbar a{
+    cursor: pointer;
+}
+
+.navbar img {
+    height: 100px;
+    width: 120px;
+    background: #121212;
+}
+
+.main {
+    margin-top: 140px;
+    width: 100%;
+    background: #1F1F1F
+    
+}
+/* Section one */
+
+.main__section__one {
+    width: 90%;
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+}
+
+.main__section__one--info {
+   width: 60%; 
+    padding-right: 5em;
+}
+
+.main__section__one--info h1 {
+    font-size: 42px;
+    margin: 3em 0em 1em 0em;
+}
+
+.main__section__one--info p {
+    font-size: 17px;
+}
+
+/* INPUT cajita donde se escribe*/
+.main__section__one--info form input {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1em;     
+}
+
+.main__section__one--img {
+    width: 40%;
+}
+
+.main__section__one--img img {
+    width: 140%;
+    margin: 10em 0 0 0;
+  
+}
+
+@media screen and (max-width: 700px) {
+
+    .main__section__one {
+        flex-direction: column-reverse;
+    }
+
+    .main__section__one--info {
+        width: 100%;
+    }
+
+    .main__section__one--img {
+        width: 90%;
+    }
+}
+/* section two*/
+
+.main__section__two {
+    
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+     /* maximo de anchura a la hora de alejar la pagina */
+     
+    padding: 5em ;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #22E309,  #F4B21A, #E7180B/*#e53fb0, #b059e8*/);
+    justify-content: center;
+    display: flex;
+}
+
+.main__section__two--because {
+    text-align: center;
+    
+}
+
+.main__section__two--because h2 {
+    margin-bottom: 0.5em;
+}
+
+.main__section__two--because p {
+    margin-bottom: 2em;
+}
+
+.main__section__two--reasons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em ;
+}
+
+.main__section__two--reasons--reason {
+    width: 30%;
+
+}
+
+.main__section__two--reasons--reason div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.main__section__two--reasons--reason div img {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {     
+    
+    .main__section__two--reasons {
+        flex-direction: column;
+    }
+
+    .main__section__two--reasons--reason {
+        width: 100%;
+        margin-bottom: 2.5em;
+    }
+    
+}
+
+/* section three*/
+
+.main__section__three {
+    width: 90%;
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section__three--function {
+    text-align: center;
+}
+
+.main__section__three--function h2 {
+    margin-bottom: 2em;
+}
+
+.main__section__three--functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__section__three--functions--function {
+    width: 30%;
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.img1 {
+    width: 22em;
+    margin: 5% 1% 5% 1%;
+}
+
+.img2 {
+    width: 22em;
+    margin: 5% 1% 5% 1%;
+    
+}
+
+.img3 {
+    width: 25em;
+    margin: 18% 1% 14% 1%;
+
+}
+
+@media screen and (max-width: 700px){  
+    .main__section__three--functions{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__section__three--functions--function {
+        width: 90%;
+        margin: 1em 0;
+        align-items: center;
+    }
+    
+
+}
+/* section four*/
+
+.main__section__four {
+    width: 100%;
+    margin-top: 150px;
+    background: linear-gradient(to right, #22E309,  #F4B21A, #E7180B/*#e53fb0, #b059e8*/);
+    
+}
+
+.main__section__four--container {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main__section__four--container--img {
+   width: 40%; 
+}
+
+.main__section__four--container--img img {
+   width: 100%; 
+   margin: 60px 0;
+   max-width: 540px;
+   max-height: 540px;
+}
+
+.main__section__four--container--info {
+    margin: 60px 0;
+    width: 50%;
+    margin-right: 1em;
+    color: var(--white);
+}
+.main__section__four--container--info h2, .main__section__four--container--info p {
+    margin-bottom: 0.8em;
+}
+
+.main__section__four--container--info a {
+    color: var(--white);
+}
+
+@media screen and (max-width: 700px){  
+
+    .main__section__four--container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__section__four--container--img{
+        width: 80%;
+    }
+
+    .main__section__four--container--info {
+        width: 90%;
+        margin-bottom: 0;
+    }
+}
+
+/* section five*/
+
+.main__section__five {
+    display: flex;
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.main__section__five--question {
+    width: 50%;
+    margin: 1em;
+}
+
+.main__section__five--question h2 {
+   margin-bottom: 0.5em; 
+}
+.main__section__five--question a {
+   color: white;
+}
+
+.main__section__five--links {
+    width: 45%;
+}
+
+.main__section__five--links--link div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__section__five--links--link div p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.main__section__five--links--link--content {
+    display: none;
+    margin-bottom: 1em;
+    color: #c0bfbf;
+}
+
+.main__section__five--links--link--content p {
+    color: #c0bfbf;
+}
+
+@media screen and (max-width: 700px){  
+
+    .main__section__five{
+        flex-direction: column;
+    }
+
+    .main__section__five--question{
+        width:100%;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .main__section__five--links{
+        width: 100%;
+    }
+}
+
+.button__toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    color: #c0bfbf;
+}
+
+
+.main__section__six {
+    width: 90%;
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section six*/
+
+.main__section__six {
+    width: 100%;
+    margin-top: 10px;
+    
+
+}
+
+.main__section__six--container {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main__section__six--container--info {
+    margin: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.main__section__six--container--info h2 {
+    margin-bottom: 1em;
+
+}
+
+.main__section__six--container--info button {
+     margin-bottom: 2em;
+}
+
+@media screen and (max-width: 700px){  
+
+    .main__section__six--container{
+        width: 90%;
+    }
+
+    .button_primary{
+        width: 100%;
+    }
+}
+
+.main__section__seven{
+    
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+   
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+    background: linear-gradient(to right, #22E309,  #F4B21A, var(--rojo-oscuro));
+}
+
+.main__section__seven--because {
+    text-align: center;
+    width: 70%;
+}
+
+.main__section__seven--because h2 {
+    margin-bottom: 5em;
+}
+
+.main__section__seven--because p {
+    margin: 2em;
+    font-weight: bold;  /* Negrita */
+    font-style: italic;
+}
+
+.main__section__seven2{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 6.8em 0  2.5em 0;
+    
+}
+.main__section__seven2--because {
+    text-align: center;
+    width: 70%
+    
+}
+
+
+
+.main__section__seven2--because p {
+    
+    font-weight: bold;  /* Negrita */
+    font-style: italic;
+    
+}
+
+
+/* -----------------------------------------home------------------------------------------------------------------------*/
+
+
+/* -----------------------------------------consejo------------------------------------------------------------------------*/
+
+/* section three*/
+
+.main__section__three {
+    width: 90%;
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section__three--function {
+    text-align: center;
+}
+
+.main__section__three--function h2 {
+    margin-bottom: 2em;
+}
+
+.main__section__three--functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__section__three--functions--function {
+    width: 30%;
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.img1 {
+    width: 22em;
+    margin: 5% 1% 5% 1%;
+}
+
+.img2 {
+    width: 22em;
+    margin: 5% 1% 5% 1%;
+    
+}
+
+.img3 {
+    width: 25em;
+    margin: 18% 1% 14% 1%;
+
+}
+
+@media screen and (max-width: 700px){  
+    .main__section__three--functions{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__section__three--functions--function {
+        width: 90%;
+        margin: 1em 0;
+        align-items: center;
+    }
+    
+
+}
+
+/* section five*/
+
+.main__section__five {
+    display: flex;
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.main__section__five--question {
+    width: 50%;
+    margin: 1em;
+}
+
+.main__section__five--question h2 {
+   margin-bottom: 0.5em; 
+}
+.main__section__five--question a {
+   color: white;
+}
+
+.main__section__five--links {
+    width: 45%;
+}
+
+.main__section__five--links--link div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__section__five--links--link div p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.main__section__five--links--link--content {
+    display: none;
+    margin-bottom: 1em;
+    color: #c0bfbf;
+}
+
+.main__section__five--links--link--content p {
+    color: #c0bfbf;
+}
+
+@media screen and (max-width: 700px){  
+
+    .main__section__five{
+        flex-direction: column;
+    }
+
+    .main__section__five--question{
+        width:100%;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .main__section__five--links{
+        width: 100%;
+    }
+}
+
+.main__section__six {
+    width: 90%;
+   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
+    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
+    margin: auto;
+    display: flex;
+    align-items: center; /*centrar verticalmente los objetos*/
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section six*/
+
+.main__section__six {
+    width: 100%;
+    margin-top: 10px;
+    
+
+}
+
+.main__section__six--container {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main__section__six--container--info {
+    margin: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.main__section__six--container--info h2 {
+    margin-bottom: 1em;
+
+}
+
+.main__section__six--container--info button {
+     margin-bottom: 2em;
+}
+
+@media screen and (max-width: 700px){  
+
+    .main__section__six--container{
+        width: 90%;
+    }
+
+    .button_primary{
+        width: 100%;
+    }
+}
+
+/* -----------------------------------------consejo------------------------------------------------------------------------*/
