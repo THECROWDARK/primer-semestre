@@ -756,8 +756,13 @@ ul {
     transform: rotateY(180deg); /* 🔥 se prepara para el giro */
     background: linear-gradient(135deg, #ff7b00, #ff3d00);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* 🔥 clave */
+    justify-content: flex-start;
+    overflow-y: auto; /* 🔥 permite scroll */
+}
+
+.back::-webkit-scrollbar {
+  display: none;
 }
 
 .front {
@@ -806,4 +811,15 @@ ul {
   0% { opacity: 0.6; }
   50% { opacity: 1; }
   100% { opacity: 0.6; }
+}
+
+.moto-detalles {
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.moto-detalles p {
+  margin: 0.3rem 0;
 }

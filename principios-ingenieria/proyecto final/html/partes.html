@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylespartes.css">
+        <link rel="stylesheet" href="../css/stylesmodelos.css">
         <link rel="icon" type="image/png" href="../img/moto.png">
         <title>MotoWiki</title>
-
     </head>
 
     <body>
@@ -21,29 +20,78 @@
 
         <main class="main">      
             <section class="main__section__one">
-                <img src="./img/logo.png" alt="Logo Pokédex">
+                <h2>Marcas</h2>
                 <ul class="nav-list">
-                    <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver todos</button></li> 
-                    <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
-                    <li class="nav-item"><button class="btn btn-header fire" id="fire">Fire</button></li>
-                    <li class="nav-item"><button class="btn btn-header water" id="water">Water</button></li>
-                    <li class="nav-item"><button class="btn btn-header grass" id="grass">Grass</button></li>
-                    <li class="nav-item"><button class="btn btn-header electric" id="electric">Electric</button></li>
-                    <li class="nav-item"><button class="btn btn-header ice" id="ice">Ice</button></li>
-                    <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Fighting</button></li>
-                    <li class="nav-item"><button class="btn btn-header poison" id="poison">Poison</button></li>
-                    <li class="nav-item"><button class="btn btn-header ground" id="ground">Ground</button></li>
-                    <li class="nav-item"><button class="btn btn-header flying" id="flying">Flying</button></li>
-                    <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
-                    <li class="nav-item"><button class="btn btn-header bug" id="bug">Bug</button></li>
-                    <li class="nav-item"><button class="btn btn-header rock" id="rock">Rock</button></li>
-                    <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Ghost</button></li>
-                    <li class="nav-item"><button class="btn btn-header dark" id="dark">Dark</button></li>
-                    <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
-                    <li class="nav-item"><button class="btn btn-header steel" id="steel">Steel</button></li>
-                    <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Fairy</button></li>
+                    <li class="nav-item"><button class="filtros todos" id="ver-todos">Ver todos</button></li> 
+                    <li class="nav-item"><button class="filtros" id="model">Modelo</button></li>
+                    <li class="nav-item"><button class="filtros" id="type">Tipo</button></li>
+                    <li class="nav-item"><button class="filtros" id="displacement">Cilindraje</button></li>
+                    <li class="nav-item"><button class="filtros" id="engine">Motor</button></li>
+                    <li class="nav-item"><button class="filtros" id="compression">Compresión</button></li>
+                    <li class="nav-item"><button class="filtros" id="bore_stroke">Diámetro x carrera</button></li>
+                    <li class="nav-item"><button class="filtros" id="valves_per_cylinder">Válvulas por cilindro</button></li>
+                    <li class="nav-item"><button class="filtros" id="fuel_system">Sistema de combustible</button></li>
+                    <li class="nav-item"><button class="filtros" id="fuel_control">Control de combustible</button></li>
+                    <li class="nav-item"><button class="filtros" id="lubrication">Lubricación</button></li>
+                    <li class="nav-item"><button class="filtros" id="cooling">Refrigeración</button></li>
+                    <li class="nav-item"><button class="filtros" id="gearbox">Caja de cambios</button></li>
+                    <li class="nav-item"><button class="filtros" id="transmission">Transmisión</button></li>
+                    <li class="nav-item"><button class="filtros" id="clutch">Embrague</button></li>
+                    <li class="nav-item"><button class="filtros" id="frame">Chasis</button></li>                   
+                    <li class="nav-item"><button class="filtros" id="front_suspension">Suspensión delantera</button></li>
+                    <li class="nav-item"><button class="filtros" id="rear_suspension">Suspensión trasera</button></li>
+                    <li class="nav-item"><button class="filtros" id="front_wheel_travel">Recorrido rueda delantera</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="rear_wheel_travel">Recorrido rueda trasera</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="front_tire">Zero Engineering</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="rear_tire">Llanta trasera</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="front_brakes">Frenos delanteros</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="rear_brakes">Frenos traseros</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="seat_height">Altura del asiento</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="ground_clearance">Altura libre al suelo</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="wheelbase">Distancia entre ejes</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="fuel_capacity">Capacidad de combustible</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="starter">Arranque</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="power">Potencia</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="torque">Torque</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="top_speed">Velocidad máxima</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="fuel_consumption">Consumo</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="emission">Emisiones</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="total_weight">Peso total</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="total_height">Altura total</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="total_length">Longitud total</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="total_width">Ancho total</button></li>
+                    <li class="nav-item"><button class="filtros" data-make="ignition">Encendido/button></li>
+                    <li class="nav-item"><button class="filtros" data-make="dry_weight">Peso en seco</button></li>
                 </ul>               
-            </section>  
+            </section>   
+            <section class="main__section__two">
+                        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <!--<div class="pokemon">
+                    <p class="pokemon-id-back">#025</p>
+                    <div class="pokemon-imagen">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="nombre-contenedor">
+                            <p class="pokemon-id">#025</p>
+                            <h2 class="pokemon-nombre">Pikachu</h2>
+                        </div>
+                        <div class="pokemon-tipos">
+                            <p class="electric tipo">ELECTRIC</p>
+                            <p class="normal tipo">NORMAL</p>
+                        </div>
+                        <div class="pokemon-stats">
+                            <p class="stat">4m</p>
+                            <p class="stat">60kg</p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            
+            
+        </div> 
+            </section>
             <section class="main__section__six">
                 <div class="main__section__six--container">
                     <div class="main__section__six--container--info">
@@ -54,8 +102,8 @@
                     </div>
                 </div>
             </section> 
-            
+
         </main>
-        <script src="../js/app.js"></script>
+        <script src="../js/partes.js"></script>
     </body>
 </html>
