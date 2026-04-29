@@ -1,5 +1,7 @@
 /* -----------------------------------------home------------------------------------------------------------------------*/
 
+/* -----------------------------------------home------------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
@@ -92,56 +94,27 @@ ul {
     color: white;
 }
 
-
 .filtros{
-    padding: 8em; /* 👈 grande pero controlado */
-    border-radius: 16px;
-
-    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    color: #e0e0e0;
-
-    border: 1px solid #333;
-
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-    box-shadow: 
-        6px 6px 15px rgba(0,0,0,0.6),
-        -4px -4px 10px rgba(255,255,255,0.05);
+    background: transparent;
+    color: #b64af5;
+    border:  1px solid #b64af5;
 }
-
 
 .filtros:hover{
-    transform: translateY(-6px);
-
-    background: linear-gradient(145deg, #333, #1f1f1f);
-
-    box-shadow: 
-        10px 10px 25px rgba(0,0,0,0.8),
-        -4px -4px 10px rgba(255,255,255,0.08);
-}
-
-/* 💥 CLICK */
-.filtros:active{
-    transform: scale(0.97);
-}
-
-/* 🔥 BOTÓN ACTIVO */
-.todos{
-    background: linear-gradient(145deg, #43245e);
+    background: #a41af4;
     color: white;
-    border: none;
+}
+
+.todos{
+    background: #a41af4;
+    color: white;
+    border: transparent;
 }
 
 .todos:hover{
-    filter: brightness(1.1);
+    background: #7506b6;
+    color: white;
 }
-
-
 
 .navbar {
     position: fixed; /* posicion(en este caso de la barra de navegacion) fixed(fija para se mueste siempre) */
@@ -241,7 +214,7 @@ ul {
    /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
      /* maximo de anchura a la hora de alejar la pagina */
      
-    padding: 11.5em 5em ;
+    padding: 5em ;
     display: flex;
     align-items: center; /*centrar verticalmente los objetos*/
     flex-direction: column;
@@ -636,7 +609,6 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     gap: .5rem;
-    justify-content: center;
 }
 
 
@@ -655,11 +627,6 @@ ul {
 
    
    perspective: 1000px;
-}
-
-.pokemon-todos {
-    display: flex;          /* cambia grid por flex aquí */
-    justify-content: center;
 }
 
 .pokemon-id-back {
@@ -857,5 +824,72 @@ ul {
 
 .moto-detalles p {
   margin: 0.3rem 0;
+}
+
+/* -----------------------------------------partes------------------------------------------------------------------------*/
+
+.bloque {
+    margin: 50px 0;
+}
+
+.bloque h1 {
+    border-bottom: 3px solid #00d4ff;
+    margin-bottom: 20px;
+}
+
+.seccion {
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--gris-claro);
+    border-radius: 5px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    flex: 1; /* 👈 ocupa todo el espacio disponible */
+}
+
+
+.info h2 {
+    color: var(--green-claro);
+    margin: 0 0 1em 0;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    color: var(--white);
+
+    
+}
+
+.info ul  li{
+   margin: 8px 0;
+    
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid var(--rojo-oscuro);
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+    margin: 100px auto;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imagen:empty {
+    display: none; /* 👈 oculta el div vacío */
 }
 

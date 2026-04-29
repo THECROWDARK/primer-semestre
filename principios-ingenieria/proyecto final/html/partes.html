@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylesmodelos.css">
+        <link rel="stylesheet" href="../css/stylespartes.css">
         <link rel="icon" type="image/png" href="../img/moto.png">
         <title>MotoWiki</title>
     </head>
@@ -19,78 +19,22 @@
         </nav>
 
         <main class="main">      
-            <section class="main__section__one">
-                <h2>Marcas</h2>
-                <ul class="nav-list">
-                    <li class="nav-item"><button class="filtros todos" id="ver-todos">Ver todos</button></li> 
-                    <li class="nav-item"><button class="filtros" id="model">Modelo</button></li>
-                    <li class="nav-item"><button class="filtros" id="type">Tipo</button></li>
-                    <li class="nav-item"><button class="filtros" id="displacement">Cilindraje</button></li>
-                    <li class="nav-item"><button class="filtros" id="engine">Motor</button></li>
-                    <li class="nav-item"><button class="filtros" id="compression">Compresión</button></li>
-                    <li class="nav-item"><button class="filtros" id="bore_stroke">Diámetro x carrera</button></li>
-                    <li class="nav-item"><button class="filtros" id="valves_per_cylinder">Válvulas por cilindro</button></li>
-                    <li class="nav-item"><button class="filtros" id="fuel_system">Sistema de combustible</button></li>
-                    <li class="nav-item"><button class="filtros" id="fuel_control">Control de combustible</button></li>
-                    <li class="nav-item"><button class="filtros" id="lubrication">Lubricación</button></li>
-                    <li class="nav-item"><button class="filtros" id="cooling">Refrigeración</button></li>
-                    <li class="nav-item"><button class="filtros" id="gearbox">Caja de cambios</button></li>
-                    <li class="nav-item"><button class="filtros" id="transmission">Transmisión</button></li>
-                    <li class="nav-item"><button class="filtros" id="clutch">Embrague</button></li>
-                    <li class="nav-item"><button class="filtros" id="frame">Chasis</button></li>                   
-                    <li class="nav-item"><button class="filtros" id="front_suspension">Suspensión delantera</button></li>
-                    <li class="nav-item"><button class="filtros" id="rear_suspension">Suspensión trasera</button></li>
-                    <li class="nav-item"><button class="filtros" id="front_wheel_travel">Recorrido rueda delantera</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="rear_wheel_travel">Recorrido rueda trasera</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="front_tire">Zero Engineering</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="rear_tire">Llanta trasera</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="front_brakes">Frenos delanteros</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="rear_brakes">Frenos traseros</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="seat_height">Altura del asiento</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="ground_clearance">Altura libre al suelo</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="wheelbase">Distancia entre ejes</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="fuel_capacity">Capacidad de combustible</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="starter">Arranque</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="power">Potencia</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="torque">Torque</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="top_speed">Velocidad máxima</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="fuel_consumption">Consumo</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="emission">Emisiones</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="total_weight">Peso total</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="total_height">Altura total</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="total_length">Longitud total</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="total_width">Ancho total</button></li>
-                    <li class="nav-item"><button class="filtros" data-make="ignition">Encendido/button></li>
-                    <li class="nav-item"><button class="filtros" data-make="dry_weight">Peso en seco</button></li>
-                </ul>               
-            </section>   
             <section class="main__section__two">
                         <div id="todos">
-            <div class="pokemon-todos" id="listaPokemon">
-                <!--<div class="pokemon">
-                    <p class="pokemon-id-back">#025</p>
-                    <div class="pokemon-imagen">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
-                    </div>
-                    <div class="pokemon-info">
-                        <div class="nombre-contenedor">
-                            <p class="pokemon-id">#025</p>
-                            <h2 class="pokemon-nombre">Pikachu</h2>
-                        </div>
-                        <div class="pokemon-tipos">
-                            <p class="electric tipo">ELECTRIC</p>
-                            <p class="normal tipo">NORMAL</p>
-                        </div>
-                        <div class="pokemon-stats">
-                            <p class="stat">4m</p>
-                            <p class="stat">60kg</p>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-            
-            
-        </div> 
+                            <div class="pokemon-todos" id="listaPokemon">
+                                <ul class="nav-list">                                                  
+                                    <button onclick="window.location.href = '../htmlp/DATOS-GENERALES.html'" class="filtros todos" id="DATOS GENERALES">DATOS GENERALES</button>
+                                    <button onclick="window.location.href = '../htmlp/MOTOR.html'" class="filtros todos" id="MOTOR">MOTOR</button>
+                                    <button onclick="window.location.href = '../htmlp/COMBUSTIBLE.html'" class="filtros todos" id="COMBUSTIBLE">COMBUSTIBLE</button>
+                                    <button onclick="window.location.href = '../htmlp/TRANSMISION.html'" class="filtros todos" id="TRANSMISIÓN">TRANSMISIÓN</button>
+                                    <button onclick="window.location.href = '../htmlp/CHASIS.html'" class="filtros todos" id="CHASIS">CHASIS</button>
+                                    <button onclick="window.location.href = '../htmlp/FRENOS.html'" class="filtros todos" id="FRENOS">FRENOS</button>
+                                    <button onclick="window.location.href = '../htmlp/RUEDAS.html'" class="filtros todos" id="RUEDAS">RUEDAS</button>
+                                    <button onclick="window.location.href = '../htmlp/DIMENSIONES.html'" class="filtros todos" id="DIMENSIONES">DIMENSIONES</button>
+                                    <button onclick="window.location.href = '../htmlp/OTROS.html'" class="filtros todos" id="OTROS">OTROS</button>                                                 
+                                </ul>  
+                            </div>          
+                        </div> 
             </section>
             <section class="main__section__six">
                 <div class="main__section__six--container">
