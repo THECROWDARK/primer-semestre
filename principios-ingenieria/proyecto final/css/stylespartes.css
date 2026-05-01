@@ -97,7 +97,7 @@ ul {
     padding: 8em; /* 👈 grande pero controlado */
     border-radius: 16px;
 
-    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    background: linear-gradient(145deg, #0f0f0f, #080808);
     color: #e0e0e0;
 
     border: 1px solid #333;
@@ -118,7 +118,7 @@ ul {
 .filtros:hover{
     transform: translateY(-6px);
 
-    background: linear-gradient(145deg, #333, #1f1f1f);
+    background: linear-gradient(145deg, #0f0f0f, #222020);
 
     box-shadow: 
         10px 10px 25px rgba(0,0,0,0.8),
@@ -132,7 +132,8 @@ ul {
 
 /* 🔥 BOTÓN ACTIVO */
 .todos{
-    background: linear-gradient(145deg, #43245e);
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    
     color: white;
     border: none;
 }

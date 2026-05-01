@@ -120,20 +120,20 @@ h3{
 
 .main__section__one {
     width: 90%;
-   /* gap: 4em; /* agregar espacio entre elementos d eun contenedor*/
-    max-width: 1366px; /* maximo de anchura a la hora de alejar la pagina */
-    margin: auto;
+    max-width: 1366px;
+    margin: 0 auto 0 9%; /* 👈 menos espacio izquierda, más derecha */
     display: flex;
-    align-items: center; /*centrar verticalmente los objetos*/
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main__section__one--info {
-   width: 60%; 
+   width: 58%; 
     padding-right: 5em;
 }
 
 .main__section__one--info h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin: 3em 0em 1em 0em;
 }
 
@@ -149,11 +149,11 @@ h3{
 }
 
 .main__section__one--img {
-    width: 40%;
+    width: 42%;
 }
 
 .main__section__one--img img {
-    width: 140%;
+    width: 138%;
     margin: 10em 0 0 0;
   
 }

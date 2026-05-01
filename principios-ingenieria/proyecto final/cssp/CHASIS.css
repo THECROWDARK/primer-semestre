@@ -121,19 +121,19 @@ h3{
 .main__section__one {
     width: 90%;
     max-width: 1366px;
-    margin: 0 auto 0 7.1%; /* 👈 menos espacio izquierda, más derecha */
+    margin: auto; /* 👈 menos espacio izquierda, más derecha */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .main__section__one--info {
-   width: 60%; 
+   width: 58%; 
     padding-right: 5em;
 }
 
 .main__section__one--info h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin: 3em 0em 1em 0em;
 }
 
@@ -149,11 +149,11 @@ h3{
 }
 
 .main__section__one--img {
-    width: 30%;
+    width: 42%;
 }
 
 .main__section__one--img img {
-    width: 140%;
+    width: 100%;
     margin: 10em 0 0 0;
   
 }
@@ -739,16 +739,23 @@ h3{
 
 .list {
     display: grid;
-    grid-template-columns: repeat(5, auto); /* 3 columnas */
-    gap: 10px 40px;
+    grid-template-columns: repeat(5, 1fr); /* columnas iguales */
+    gap: 10px; /* separación uniforme */
     list-style: none;
     padding: 0;
-    margin: 4em;
+    margin: 4em 15em;
+    
 }
 
 .list li {
-    color: #c0bfbf;
-    margin: 0 3em ;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2); /* efecto tabla */
+    background: rgba(255,255,255,0.05); /* opcional */
+    display: flex;              /* 👈 clave */
+    justify-content: center;    /* centra horizontal */
+    align-items: center;        /* centra vertical */
 }
 
 .main__section__one1{
@@ -760,18 +767,18 @@ h3{
 .main__section__one1--container{
     width: 90%;
     max-width: 1366px;
-    margin: 0 auto 5em 7.1%; /* 👈 menos espacio izquierda, más derecha */
+    margin: auto; /* 👈 menos espacio izquierda, más derecha */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .main__section__one1--info {
-   width: 60%; 
+   width: 58%; 
     padding-right: 5em;
 }
 
 .main__section__one1--info h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin: 3em 0em 1em 0em;
 }
 
@@ -787,13 +794,12 @@ h3{
 }
 
 .main__section__one1--img {
-    width: 30%;
+    width: 42%;
 }
 
 .main__section__one1--img img {
-    width: 140%;
+    width: 100%;
     margin: 10em 0 0 0;
-    
   
 }
 
@@ -831,21 +837,28 @@ h3{
 
 .main__section__seven7--because p {
     
-    font-weight: bold;  /* morocha jiji */
+    font-weight: bold;  /* Negrita */
     font-style: italic;
     
 }
 
 .list7 {
     display: grid;
-    grid-template-columns: repeat(5, auto); /* 3 columnas */
-    gap: 10px 40px;
+    grid-template-columns: repeat(5, 1fr); /* columnas iguales */
+    gap: 10px; /* separación uniforme */
     list-style: none;
     padding: 0;
-    margin: 4em;
+    margin: 4em 15em;
+    
 }
 
 .list7 li {
     color: #fff;
-    margin: 0 3em ;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2); /* efecto tabla */
+    background: rgba(255,255,255,0.05); /* opcional */
+    display: flex;              /* 👈 clave */
+    justify-content: center;    /* centra horizontal */
+    align-items: center;        /* centra vertical */
 }
