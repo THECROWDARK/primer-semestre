@@ -106,8 +106,8 @@ h3{
 
 .navbar img {
     height: 100px;
-    width: 120px;
-    background: #121212;
+    width: 150px;
+    
 }
 
 .main {
@@ -121,7 +121,7 @@ h3{
 .main__section__one {
     width: 90%;
     max-width: 1366px;
-    margin: 0 auto 0 9%; /* 👈 menos espacio izquierda, más derecha */
+    margin: 0 auto 0 5%; /* 👈 menos espacio izquierda, más derecha */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +129,7 @@ h3{
 
 .main__section__one--info {
    width: 58%; 
-    padding-right: 5em;
+    padding-right: 1em;
 }
 
 .main__section__one--info h1 {
@@ -193,10 +193,11 @@ h3{
 .main__section__two--because {
     text-align: center;
     
+    
 }
 
 .main__section__two--because h2 {
-    margin-bottom: 0.5em;
+    margin: 0 0 1.5em 0;
 }
 
 .main__section__two--because p {
@@ -409,6 +410,11 @@ h3{
     color: #c0bfbf;
 }
 
+.links-preguntas {
+    color: var(--rojo-oscuro);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 700px){  
 
     .main__section__five{
@@ -600,6 +606,19 @@ h3{
 
 }
 
+.img4 {
+    width: 8em;
+   
+
+}
+
+.img5 {
+    width: 40em;
+   
+
+}
+
+
 @media screen and (max-width: 700px){  
     .main__section__three--functions{
         flex-direction: column;
@@ -633,18 +652,21 @@ h3{
 .main__section__five--question h2 {
    margin-bottom: 0.5em; 
 }
-.main__section__five--question a {
-   color: white;
+
+.main__section__five--question img {
+   margin:0; 
 }
 
 .main__section__five--links {
     width: 45%;
+    margin: 11em 0 0 0;
 }
 
 .main__section__five--links--link div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .main__section__five--links--link div p {
@@ -735,4 +757,8 @@ h3{
     }
 }
 
+.main__section__seven a {
+    color: var(--white);
+   
+}
 /* -----------------------------------------consejo------------------------------------------------------------------------*/
